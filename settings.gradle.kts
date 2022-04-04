@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = "Cakom"
 include(":androidApp")
 include(":cakom")
+include(":drawer")

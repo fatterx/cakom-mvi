@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		98A2C4A75A4E5BDD55D2291A42E58E37 /* cakom */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 92D8DF40FEE0783536548E457E7B518D /* Build configuration list for PBXAggregateTarget "cakom" */;
+			buildConfigurationList = 14BDD19CCA4B0DD591F660C7395B684B /* Build configuration list for PBXAggregateTarget "cakom" */;
 			buildPhases = (
-				7D541062051C98583A32EC9976DA64B0 /* [CP-User] Build cakom */,
+				B95B314BA14C9F0247B7841E16647EB8 /* [CP-User] Build cakom */,
 			);
 			dependencies = (
 			);
@@ -241,7 +241,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D541062051C98583A32EC9976DA64B0 /* [CP-User] Build cakom */ = {
+		B95B314BA14C9F0247B7841E16647EB8 /* [CP-User] Build cakom */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,7 +249,7 @@
 			name = "[CP-User] Build cakom";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -274,7 +274,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01C03226897E6877F77B6D6850A7DA24 /* Release */ = {
+		5596C06444FB15EAA72D0350FCAA6659 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECB71ACD9FC8E4535258F6A72B4892EC /* cakom.release.xcconfig */;
 			buildSettings = {
@@ -354,7 +354,7 @@
 			};
 			name = Release;
 		};
-		78D007691AB06A04F6F1A72730F8A094 /* Debug */ = {
+		9D16737C164BA743B04448A58BB122A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EB9A95179657AA20BECABC4CFF02332 /* cakom.debug.xcconfig */;
 			buildSettings = {
@@ -515,6 +515,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14BDD19CCA4B0DD591F660C7395B684B /* Build configuration list for PBXAggregateTarget "cakom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D16737C164BA743B04448A58BB122A1 /* Debug */,
+				5596C06444FB15EAA72D0350FCAA6659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -529,15 +538,6 @@
 			buildConfigurations = (
 				DFE9B6E90CBE7554AE00BD52C4248EA3 /* Debug */,
 				A13792126BE3A6DDA4A744AA03AC50D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92D8DF40FEE0783536548E457E7B518D /* Build configuration list for PBXAggregateTarget "cakom" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78D007691AB06A04F6F1A72730F8A094 /* Debug */,
-				01C03226897E6877F77B6D6850A7DA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

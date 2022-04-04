@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'cakom'
+    spec.name                     = 'drawer'
     spec.version                  = '1.0'
     spec.homepage                 = 'Link to the Shared Module homepage'
     spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license                  = ''
     spec.summary                  = 'Some description for the Shared Module'
 
-    spec.vendored_frameworks      = "build/cocoapods/framework/cakom.framework"
+    spec.vendored_frameworks      = "build/cocoapods/framework/drawer.framework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
@@ -16,13 +16,13 @@ Pod::Spec.new do |spec|
                 
 
     spec.pod_target_xcconfig = {
-        'KOTLIN_PROJECT_PATH' => ':cakom',
-        'PRODUCT_MODULE_NAME' => 'cakom',
+        'KOTLIN_PROJECT_PATH' => ':drawer',
+        'PRODUCT_MODULE_NAME' => 'drawer',
     }
 
     spec.script_phases = [
         {
-            :name => 'Build cakom',
+            :name => 'Build drawer',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT
