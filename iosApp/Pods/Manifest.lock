@@ -1,0 +1,16 @@
+PODS:
+  - cakom (1.0)
+
+DEPENDENCIES:
+  - cakom (from `../cakom`)
+
+EXTERNAL SOURCES:
+  cakom:
+    :path: "../cakom"
+
+SPEC CHECKSUMS:
+  cakom: 94c0f84b0ab12e80a6c5061edb5d4deb86fd0c49
+
+PODFILE CHECKSUM: 76f7383631ebb2a118e6963bdf24c116f5382257
+
+COCOAPODS: 1.10.1
